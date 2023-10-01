@@ -1,0 +1,263 @@
+{
+  "name": "heatmap V4",
+  "versions": {
+    "attack": "13",
+    "navigator": "4.8.2",
+    "layer": "4.4"
+  },
+  "domain": "enterprise-attack",
+  "description": "An example layer where all techniques have a randomized score",
+  "filters": {
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows",
+      "Network",
+      "PRE",
+      "Containers",
+      "Office 365",
+      "SaaS",
+      "Google Workspace",
+      "IaaS",
+      "Azure AD"
+    ]
+  },
+  "sorting": 3,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "average",
+    "showID": false,
+    "showName": true,
+    "showAggregateScores": false,
+    "countUnscored": false
+  },
+  "hideDisabled": false,
+  "gradient": {
+    "colors": [
+      "#ff6666ff",
+      "#ffe766ff",
+      "#8ec843ff"
+    ],
+    "minValue": 0,
+    "maxValue": 10
+  },
+  "legendItems": [],
+  "metadata": [],
+  "links": [],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": false,
+  "selectSubtechniquesWithParent": false,
+  "techniques": [
+    {
+      "techniqueID": "T1650",
+      "score": 5,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1583",
+      "score": 1,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "This is a test alert by sagar"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1595.001",
+      "score": 6,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1650",
+      "score": 5,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1583",
+      "score": 1,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "This is a test alert by sagar"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1595.001",
+      "score": 6,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1650",
+      "score": 5,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1583",
+      "score": 1,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "This is a test alert by sagar"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1651",
+      "score": 10,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "This is a test alert by sagar for demo"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1595.001",
+      "score": 6,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1650",
+      "score": 5,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1583",
+      "score": 1,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "This is a test alert by sagar"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1651",
+      "score": 10,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "This is a test alert by sagar for demo"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 8,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "demo use case"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1595.001",
+      "score": 6,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+    "name": "heatmap example",
+    "version": "3.0",
+    "sorting": 3,
+    "description": "An example layer where all techniques have a randomized score",
+    "domain": "mitre-enterprise",
+    "techniques": [
+        {
+            "techniqueID": "T1650",
+            "score": 5,
+            "metadata": [
+                {
+                    "name": "Audio Capture",
+                    "description": "Detects attempts to record audio with arecord utility"
+                } 
+            ]
+        },
+        {
+            "techniqueID": "T1595.001",
+            "score": 6,
+            "metadata": [
+                {
+                    "name": "Audio Capture",
+                    "description": "Detects attempts to record audio with arecord utility"
+                }
+            ]
+        }
+    ]
+}
