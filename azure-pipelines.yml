@@ -1,0 +1,40 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+- script: 'python3 -m pip install --upgrade pip'
+  displayName: 'Install pip'
+
+- script: |
+   pip3 install PyYAML
+   
+  displayName: 'Install Yaml'
+  
+- task: PythonScript@0
+  displayName: 'Run a Python script'
+  inputs:
+    scriptPath: main.py
+
+- script: |
+   git config --global user.email attrisagar@gmail.com & git config --global user.name "attri-sagar"
+   
+  workingDirectory: '$(System.DefaultWorkingDirectory)'
+  displayName: 'Config Git' 
+
+- script: |
+   git checkout -b master
+   git add -A
+   git commit -m "deployment $(Build.BuildNumber)"
+   git remote set-url origin https://github.com/attri-sagar/test.git
+   git push --set-upstream origin master
+  workingDirectory: '$(System.DefaultWorkingDirectory)'
+  displayName: 'Update file back to Repo'
