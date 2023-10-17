@@ -3,8 +3,8 @@ import yaml
 import json
 
 # Define the folder containing YAML files and the path to the JSON file
-yaml_folder = '/Users/sagar/Documents/DO/Projects/attackMapper/rules/'
-json_file_path = '/Users/sagar/Documents/DO/Projects/attackMapper/attackLayer/v4heatmap_layer.json'
+yaml_folder = 'rules/'
+json_file_path = 'attackLayer/v4heatmap_layer.json'
 
 # Function to update JSON based on a YAML file
 def update_json_from_yaml(yaml_file_path, json_data):
