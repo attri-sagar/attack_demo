@@ -37,7 +37,7 @@ steps:
    git checkout -b main
    git add -A
    git commit -m "deployment $(Build.BuildNumber)"
-   git remote set-url --add origin https://attri-sagar:${env:PAT}@github.com/attri-sagar/attack_demo.git
+   git remote set-url --add origin https://attri-sagar:$(PAT)@github.com/attri-sagar/attack_demo.git
    git push --set-upstream origin main
   workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Update file back to Repo'
