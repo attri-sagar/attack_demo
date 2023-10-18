@@ -34,6 +34,6 @@ steps:
    git checkout -b main
    git add -A
    git commit -m "deployment $(Build.BuildNumber)"
-   git push https://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@github.com/attri-sagar/attack_demo.git
+   git push https://R4sammy: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@github.com/attri-sagar/attack_demo.git
   workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Update file back to Repo'
