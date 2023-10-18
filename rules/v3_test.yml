@@ -1,4 +1,4 @@
-title: demo use case
+title: Audio Capture
 id: a7af2487-9c2f-42e4-9bb9-ff961f0561d5
 status: test
 description: Detects attempts to record audio with arecord utility
@@ -9,8 +9,8 @@ author: 'Pawel Mazur'
 date: 2021/09/04
 modified: 2022/10/09
 tags:
-    - techniqueID: T1181
-    - score: 8
+    - techniqueID: T1567
+    - score: 6
 logsource:
     product: linux
     service: auditd
