@@ -25,7 +25,7 @@ steps:
     scriptPath: main.py
 
 - script: |
-   git config --global user.email attrisagar@gmail.com
+   git config --global user.email "attrisagar@gmail.com"
    git config --global user.name "attri-sagar"
   workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Config Git' 
