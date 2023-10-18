@@ -748,6 +748,76 @@
           "value": "Detects attempts to record audio with arecord utility"
         }
       ]
+    },
+    {
+      "techniqueID": "T1651",
+      "score": 10,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "This is a test alert by sagar for demo"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1650",
+      "score": 5,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1583",
+      "score": 1,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "This is a test alert by sagar"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1595.001",
+      "score": 6,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "Audio Capture"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 8,
+      "metadata": [
+        {
+          "name": "title",
+          "value": "demo use case"
+        },
+        {
+          "name": "description",
+          "value": "Detects attempts to record audio with arecord utility"
+        }
+      ]
     }
   ]
 }
