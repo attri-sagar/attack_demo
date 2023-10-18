@@ -31,7 +31,7 @@ steps:
   displayName: 'Config Git' 
 
 - script: |
-
+   git checkout -b main
    git remote set-url origin https://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@github.com/attri-sagar/attack_demo.git
    git add -A
    git commit -m "deployment $(Build.BuildNumber)"
