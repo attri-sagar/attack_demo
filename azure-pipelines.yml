@@ -33,10 +33,14 @@ steps:
   workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Config Git' 
 
-- script: |
-   git checkout -b main
-   git add -A
-   git commit -m "deployment $(Build.BuildNumber)"
-   git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push
-  workingDirectory: '$(System.DefaultWorkingDirectory)'
-  displayName: 'Update file back to Repo'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      git checkout -b main
+      git add -A
+      git commit -m "deployment $(Build.BuildNumber)"
+      git remote set-url --add origin https://attri-sagar:$BASH_ENV.com/attri-sagar/attack_demo.git
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+    bashEnvValue: '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'
