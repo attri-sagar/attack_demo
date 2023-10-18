@@ -11,6 +11,9 @@ pool:
 
 steps:
 
+- checkout: self
+  persistCredentials: true
+
 - script: 'python3 -m pip install --upgrade pip'
   displayName: 'Install pip'
 
@@ -34,6 +37,6 @@ steps:
    git checkout -b main
    git add -A
    git commit -m "deployment $(Build.BuildNumber)"
-   git push https://R4sammy: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@github.com/attri-sagar/attack_demo.git
+   git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push
   workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Update file back to Repo'
