@@ -31,6 +31,8 @@ steps:
   displayName: 'Config Git' 
 
 - script: |
+   git -V
+   git config --list
    git checkout -b master
    git add -A
    git commit -m "deployment $(Build.BuildNumber)"
