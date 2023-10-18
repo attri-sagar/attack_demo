@@ -31,12 +31,12 @@ steps:
   displayName: 'Config Git' 
 
 - script: |
-   git -V
+   git -v
    git config --list
-   git checkout -b master
+   git checkout -b main
    git add -A
    git commit -m "deployment $(Build.BuildNumber)"
    git remote set-url --add origin https://attri-sagar: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@github.com/attri-sagar/attack_demo.git
-   git push --set-upstream origin master
+   git push --set-upstream origin main
   workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Update file back to Repo'
